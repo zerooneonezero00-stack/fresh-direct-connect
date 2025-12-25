@@ -7,6 +7,8 @@ import Index from "./pages/Index";
 import Browse from "./pages/Browse";
 import Farmers from "./pages/Farmers";
 import HowItWorks from "./pages/HowItWorks";
+import Auth from "./pages/Auth";
+import FarmerProfile from "./pages/FarmerProfile";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -21,7 +23,9 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/browse" element={<Browse />} />
           <Route path="/farmers" element={<Farmers />} />
+          <Route path="/farmer/:id" element={<FarmerProfile />} />
           <Route path="/how-it-works" element={<HowItWorks />} />
+          <Route path="/auth" element={<Auth />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
