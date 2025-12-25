@@ -39,7 +39,7 @@ const HeroSection = () => {
               </Link>
             </Button>
             <Button variant="outline" size="xl" asChild>
-              <Link to="/register">
+              <Link to="/auth?role=farmer">
                 Join as Farmer
               </Link>
             </Button>
